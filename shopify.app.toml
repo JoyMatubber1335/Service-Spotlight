@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "09a7adef3729cf15bc965d8291ae08d1"
+name = "service-spotlight"
+application_url = "https://courier-incorrect-departments-isa.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "grocery-shop-23.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://courier-incorrect-departments-isa.trycloudflare.com/auth/callback",
+  "https://courier-incorrect-departments-isa.trycloudflare.com/auth/shopify/callback",
+  "https://courier-incorrect-departments-isa.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
